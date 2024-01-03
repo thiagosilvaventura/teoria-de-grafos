@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca da Teoria de Grafos, Algoritmos de Checagem</title>
+    <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Acerca da Teoria de Grafos, Algoritmos de Checagem</h1>
+    <p>Autor: Ventura, Thiago da Silva</p>
+    <p>Data: 03/01/2024 | Local: São Paulo, Brazil</p>
+
+    <h2>Conjectura do Grafo: Uma Exploração Matemática Profunda com Base na Teoria de Grafos e Redes Neurais</h2>
+
+    <p>A Conjectura do Grafo, ao se embasar nos sólidos princípios da teoria de grafos e matemática discreta, proporciona uma perspectiva intrigante sobre a resolução eficiente de quebra-cabeças Sudoku. Essa conjectura, apoiada em renomados autores e suas contribuições à teoria de grafos, destaca-se como um campo interdisciplinar, unindo conceitos matemáticos e estratégias algorítmicas.</p>
+
+    <h2>1. Verificação de Lugares em um Quebra-Cabeça Sudoku</h2>
+
+    <p>A exigência de que os valores atribuídos aos lugares \((i, j)\) de um Sudoku sejam distintos pode ser formalizada utilizando inequações fundamentais:</p>
+
+    <p>\[A_{ij} \neq B_{ij}\]</p>
+
+    <p>Expandindo para um Sudoku de dimensões maiores, West estabelece que para todos os pares de lugares distintos \((i, j)\) e \((k, l)\), os valores devem ser inequívocos:</p>
+
+    <p>\[A_{ij} \neq A_{kl}, \quad B_{ij} \neq B_{kl}, \quad \forall i, j, k, l\]</p>
+
+    <p>Este princípio é crucial para garantir a validade das soluções no contexto mais amplo do Sudoku.</p>
+
+    <h2>2. Utilizando Verificações em Redes Neurais</h2>
+
+    <p>As redes neurais, como descrito por Nielsen, podem ser representadas por camadas de neurônios com pesos associados. A propagação da entrada \(X\) pela rede, ponderada pelos pesos \(W^{(1)}\), pode ser expressa como:</p>
+
+    <p>\[Z^{(2)} = W^{(1)}X + b^{(1)}\]</p>
+
+    <p>A aplicação de uma função de ativação \(\sigma\) proporciona a saída da camada oculta:</p>
+
+    <p>\[A^{(2)} = \sigma(Z^{(2)})\]</p>
+
+    <p>A convergência entre valores em redes neurais, conforme evidenciado por Hornik et al., é refletida na atualização iterativa dos pesos durante o processo de treinamento, indicando uma busca por soluções mais eficientes.</p>
+
+    <h2>3. Valores Convergentes Extras Planos</h2>
+
+    <p>Bondy e Murty propõem que a convergência entre valores pode ser representada por uma matriz \(C\) que relaciona valores \(A_{ij}, B_{mn}, \ldots\), indicando uma convergência entre as informações nos lugares adjacentes:</p>
+
+    <p>\[C_{ij} = f(A_{kl}, B_{mn}, \ldots), \quad \forall i, j, k, l, m, n\]</p>
+
+    <p>Aqui, a função \(f\) captura as relações complexas entre os valores convergentes e seus lugares adjacentes, oferecendo uma abordagem alternativa para a resolução de Sudoku.</p>
+
+    <h2>4. Direção em Matrizes</h2>
+
+    <p>Cormen et al. sugerem que, ao abordar o Sudoku através de matrizes, a escolha cuidadosa dos pontos iniciais e finais influencia a determinação do valor convergente:</p>
+
+    <p>\[M_{ij} = M_{xy}, \quad \text{onde } x, y \text{ são os pontos iniciais e finais}\]</p>
+
+    <p>Essa direção definida na matriz destaca a relevância de estratégias bem planejadas na resolução eficiente do quebra-cabeça.</p>
+
+    <h2>5. Compressão de Informação e Entropia</h2>
+
+    <p>A compressão de informações, conforme MacKay, pode ser exemplificada pela representação eficiente dos valores A, B, C e D em termos de potências de 2 e suas respectivas informações contidas:</p>
+
+    <p>\[A = 2^0, \quad B = 2^1, \quad C = 2^2, \quad D = 2^3\]</p>
+
+    <p>Essa representação condensada destaca a capacidade de reduzir a redundância de informações, respeitando o princípio da eficiência informacional.</p>
+
+    <h2>Conclusão</h2>
+
+    <p>A Conjectura do Grafo, ao abranger princípios matemáticos, teoria de grafos e redes neurais, proporciona uma perspectiva única na abordagem de quebra-cabeças Sudoku. Ao combinar inequações fundamentais, princípios de redes neurais, valores convergentes extras planos, direção em matrizes e compressão de informações, esta conjectura se posiciona como uma abordagem abrangente e interdisciplinar para otimizar a resolução desses desafios lógicos.</p>
+
+    <h2>Bibliografia</h2>
+
+    <p>1. West, D. B. (2001). "Introduction to Graph Theory."</p>
+    <p>2. Nielsen, M. A. (2015). "Neural Networks and Deep Learning."</p>
+    <p>3. Hornik, K., Stinchcombe, M., & White, H. (1989). "Multilayer feedforward networks are universal approximators."</p>
+    <p>4. Bondy, J. A., & Murty, U. S. R. (2008). "Graph Theory."</p>
+    <p>5. Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). "Introduction to Algorithms."</p>
+    <p>6. MacKay, D. J. C. (2003). "Information Theory, Inference, and Learning Algorithms."</p>
+
+    <p>Palavras-chave: Teoria de Grafos, Sudoku, Redes Neurais, Conjectura do Grafo, Algoritmos de Checagem</p>
+
+</body>
+
+</html>
